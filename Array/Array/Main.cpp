@@ -325,8 +325,8 @@ void hs()
 			char* s = hs;
 			cout << "char* s = hs;\n"
 				<< "=> s = " << s << endl << endl;
-			
 			delete[] s;
+
 			system("pause");
 			break;
 		}
