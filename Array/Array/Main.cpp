@@ -203,6 +203,7 @@ void arr()
 			for (int i = 0; i < a.getSize(); i++)
 				cout << b[i] << " ";
 			cout << endl << endl;
+			delete[] b;
 
 			break;
 		}
@@ -324,7 +325,8 @@ void hs()
 			char* s = hs;
 			cout << "char* s = hs;\n"
 				<< "=> s = " << s << endl << endl;
-
+			
+			delete[] s;
 			system("pause");
 			break;
 		}
