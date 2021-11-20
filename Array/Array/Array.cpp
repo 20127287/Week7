@@ -74,7 +74,7 @@ Array& Array::operator=(const Array& a)
 }
 
 
-int& Array::operator[](int index)
+int& Array::operator[](int index) const
 {
 	if (index >= 0 && index < this->size)
 		return this->data[index];
@@ -121,7 +121,7 @@ Size:
 }
 
 
-ostream& operator<<(ostream& os, Array a)
+ostream& operator<<(ostream& os, const Array& a)
 {
 	for (int i = 0; i < a.size; i++)
 		os << a[i] << " ";

@@ -1,2 +1,5 @@
-﻿  Main.cpp
+﻿  Array.cpp
+  Main.cpp
+  Generating Code...
+F:\HK1 nam 2\OOP\OOP class\Week7\Array\Array\Array.cpp(81): warning C4715: 'Array::operator[]': not all control paths return a value
   Array.vcxproj -> F:\HK1 nam 2\OOP\OOP class\Week7\Array\x64\Debug\Array.exe
