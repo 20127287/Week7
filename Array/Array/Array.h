@@ -18,11 +18,11 @@ public:
 	~Array();
 
 	Array& operator=(const Array&);
-	int& operator[](int);
+	int& operator[](int) const;
 	operator int* ();
 
 	int getSize() const;
 
 	friend istream& operator>>(istream&, Array&);
-	friend ostream& operator<<(ostream&, Array);
+	friend ostream& operator<<(ostream&, const Array&);
 };
