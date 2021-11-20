@@ -30,7 +30,12 @@ int main()
 
 
 		case 0:
-			goto Exit;
+		{
+			cout << "\n\t\t\t==================================================================="
+				<< "\n\t\t\t\t\t*** THANK YOU! SEE YOU LATER! ***\n\n";
+
+			return 0;
+		}
 
 
 		default:
@@ -38,12 +43,6 @@ int main()
 			system("pause");
 		}
 	}
-
-Exit:
-	cout << "\n\t\t\t==================================================================="
-		<< "\n\t\t\t\t\t*** THANK YOU! SEE YOU LATER! ***\n\n";
-
-	return 0;
 }
 
 
@@ -210,7 +209,7 @@ void arr()
 
 
 		case 0:
-			goto Exit;
+			return;
 
 
 		default:
@@ -219,9 +218,6 @@ void arr()
 		}
 		system("pause");
 	}
-
-Exit:
-	return;
 }
 //******************************************************************************************************************
 
@@ -333,7 +329,7 @@ void hs()
 
 
 		case 0:
-			goto Exit;
+			return;
 
 
 		default:
@@ -341,9 +337,6 @@ void hs()
 			system("pause");
 		}
 	}
-
-Exit:
-	return;
 }
 //******************************************************************************************************************
 
@@ -494,7 +487,7 @@ Input:
 
 
 		case 0:
-			goto Exit;
+			return;
 
 
 		default:
@@ -503,7 +496,4 @@ Input:
 		}
 		system("pause");
 	}
-
-Exit:
-	return;
 }

@@ -108,7 +108,7 @@ GPA:
 }
 
 
-ostream& operator<<(ostream& os, HocSinh hs)
+ostream& operator<<(ostream& os, const HocSinh& hs)
 {
 	os << "Name: " << hs.name << endl;
 	os << "GPA: " << hs.gpa << endl;
