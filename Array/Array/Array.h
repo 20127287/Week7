@@ -21,7 +21,7 @@ public:
 	int& operator[](int);
 	operator int* ();
 
-	int getSize();
+	int getSize() const;
 
 	friend istream& operator>>(istream&, Array&);
 	friend ostream& operator<<(ostream&, Array);

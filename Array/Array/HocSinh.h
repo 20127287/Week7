@@ -28,5 +28,5 @@ public:
 	operator char* ();
 
 	friend istream& operator>>(istream&, HocSinh&);
-	friend ostream& operator<<(ostream&, HocSinh);
+	friend ostream& operator<<(ostream&, const HocSinh&);
 };

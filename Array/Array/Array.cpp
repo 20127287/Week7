@@ -10,18 +10,28 @@ Array::Array()
 
 Array::Array(int size)
 {
-	if (size < 0)
-		size = 0;
+	if (size <= 0) {
+		this->size = 0;
+		this->data = nullptr;
+		return;
+	}
 
 	this->size = size;
 	this->data = new int[this->size];
+
+	for (int i = 0; i < this->size; i++)
+		this->data[i] = 0;
 }
 
 
 Array::Array(int a[], int size)
 {
-	if (size < 0)
-		size = 0;
+	if (size <= 0) {
+		this->size = 0;
+		this->data = nullptr;
+		return;
+	}
+
 	this->size = size;
 	this->data = new int[this->size];
 
@@ -82,7 +92,7 @@ Array::operator int* ()
 }
 
 
-int Array::getSize()
+int Array::getSize() const
 {
 	return this->size;
 }
