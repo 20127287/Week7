@@ -75,11 +75,13 @@ void ArrayMenu()
 		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
 		<< "\t\t\t\t* [3]. Constructor from int[] with given size\t\t  *\n"
 		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
-		<< "\t\t\t\t* [4]. Assignment operator =\t\t\t\t  *\n"
+		<< "\t\t\t\t* [4]. Constructor from another Array object\t\t  *\n"
 		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
-		<< "\t\t\t\t* [5]. Bracket operator []\t\t\t\t  *\n"
+		<< "\t\t\t\t* [5]. Assignment operator =\t\t\t\t  *\n"
 		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
-		<< "\t\t\t\t* [6]. Type casting operator (int*)\t\t\t  *\n"
+		<< "\t\t\t\t* [6]. Bracket operator []\t\t\t\t  *\n"
+		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
+		<< "\t\t\t\t* [7]. Type casting operator (int*)\t\t\t  *\n"
 		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
 		<< "\t\t\t\t* [0]. Back\t\t\t\t\t\t  *\n"
 		<< "\t\t\t\t*\t\t\t\t\t\t\t  *\n"
@@ -164,8 +166,8 @@ void arr()
 			cout << "Enter array a:\n";
 			cin >> a;
 
-			Array b = a;
-			cout << "\nArray b = a;\n"
+			Array b(a);
+			cout << "\nArray b(a);\n"
 				<< "=> b = " << b << endl << endl;
 
 			break;
@@ -173,6 +175,23 @@ void arr()
 
 
 		case 5: {
+			Array a;
+			cout << "Enter array a:\n";
+			cin >> a;
+
+			Array b;
+			cout << "\nEnter array b:\n";
+			cin >> b;
+
+			b = a;
+			cout << "\nArray b = a;\n"
+				<< "=> b = " << b << endl << endl;
+
+			break;
+		}
+
+
+		case 6: {
 			Array a;
 			cout << "Enter array a:\n";
 			cin >> a;
@@ -190,7 +209,7 @@ void arr()
 		}
 
 
-		case 6: {
+		case 7: {
 			Array a;
 			cout << "Enter array a:\n";
 			cin >> a;
